@@ -30,5 +30,19 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
             formCamila.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Axel FormAxel = new Axel();
+
+            FormAxel.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Moises ForMoises = new Moises();
+
+            ForMoises.ShowDialog();
+        }
     }
 }
