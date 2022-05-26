@@ -70,6 +70,12 @@
     <Compile Include="Dicarlo.Designer.cs">
       <DependentUpon>Dicarlo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Moises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moises.Designer.cs">
+      <DependentUpon>Moises.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Axel.resx">
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moises.resx">
+      <DependentUpon>Moises.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\58483.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
