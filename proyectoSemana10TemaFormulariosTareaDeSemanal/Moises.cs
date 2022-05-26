@@ -34,6 +34,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
             textTELEFONO.Text = "";
             textID.Text = "";
 
+
         }
     }
 }
