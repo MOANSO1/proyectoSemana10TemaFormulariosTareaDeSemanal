@@ -120,7 +120,7 @@
             // 
             // imagenCancelRegister
             // 
-            this.imagenCancelRegister.Image = global::MultipleForms.Properties.Resources.desaprobado_img;
+            //this.imagenCancelRegister.Image = global::proyectoSemana10TemaFormulariosTareaDeSemanal.Properties.Resources.desaprobado_img;
             this.imagenCancelRegister.ImageLocation = "";
             this.imagenCancelRegister.Location = new System.Drawing.Point(240, 179);
             this.imagenCancelRegister.Name = "imagenCancelRegister";
@@ -132,7 +132,7 @@
             // 
             // imageRegister
             // 
-            this.imageRegister.Image = global::MultipleForms.Properties.Resources.RegisterComplete;
+            //this.imageRegister.Image = global::proyectoSemana10TemaFormulariosTareaDeSemanal.Properties.Resources.RegisterComplete;
             this.imageRegister.ImageLocation = "";
             this.imageRegister.Location = new System.Drawing.Point(113, 179);
             this.imageRegister.Name = "imageRegister";
