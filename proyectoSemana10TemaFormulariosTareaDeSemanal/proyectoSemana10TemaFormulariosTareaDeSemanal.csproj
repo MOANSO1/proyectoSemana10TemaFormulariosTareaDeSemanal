@@ -75,6 +75,17 @@
     </Compile>
     <Compile Include="Joyce.Designer.cs">
       <DependentUpon>Joyce.cs</DependentUpon>
+    <Compile Include="Melissa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Melissa.Designer.cs">
+      <DependentUpon>Melissa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moises.Designer.cs">
+      <DependentUpon>Moises.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +103,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Joyce.resx">
       <DependentUpon>Joyce.cs</DependentUpon>
+
+    <EmbeddedResource Include="Melissa.resx">
+      <DependentUpon>Melissa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moises.resx">
+      <DependentUpon>Moises.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,10 +144,17 @@
     <None Include="imagenes\58483.png" />
   </ItemGroup>
   <ItemGroup>
+
     <None Include="imagenes\desaprobado_img.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\RegisterComplete.png" />
+
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
