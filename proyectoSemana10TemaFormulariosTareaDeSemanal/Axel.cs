@@ -59,5 +59,10 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
             string cadena = txtNombre.Text + " " + txtApellidos.Text + " " + " Cliente Registrado";
             MessageBox.Show(cadena);
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

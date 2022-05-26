@@ -168,6 +168,7 @@
             this.btnSalir.Size = new System.Drawing.Size(60, 57);
             this.btnSalir.TabIndex = 14;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnRegistrarCliente
             // 
