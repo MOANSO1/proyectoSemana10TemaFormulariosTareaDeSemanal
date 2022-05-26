@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dicarlo));
             this.chkMesa = new System.Windows.Forms.CheckBox();
             this.chkMueble = new System.Windows.Forms.CheckBox();
             this.chkLaptop = new System.Windows.Forms.CheckBox();
@@ -41,6 +42,7 @@
             this.chkRepisa = new System.Windows.Forms.CheckBox();
             this.txtRepisa = new System.Windows.Forms.TextBox();
             this.btnComprar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // chkMesa
@@ -158,7 +160,7 @@
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(528, 375);
+            this.btnComprar.Location = new System.Drawing.Point(562, 375);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(75, 23);
             this.btnComprar.TabIndex = 26;
@@ -166,11 +168,26 @@
             this.btnComprar.UseVisualStyleBackColor = true;
             this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label1.Location = new System.Drawing.Point(464, 368);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 32);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "                  \r\n 1 ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // Dicarlo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.chkRepisa);
             this.Controls.Add(this.txtRepisa);
@@ -206,5 +223,6 @@
         private System.Windows.Forms.CheckBox chkRepisa;
         private System.Windows.Forms.TextBox txtRepisa;
         private System.Windows.Forms.Button btnComprar;
+        private System.Windows.Forms.Label label1;
     }
 }

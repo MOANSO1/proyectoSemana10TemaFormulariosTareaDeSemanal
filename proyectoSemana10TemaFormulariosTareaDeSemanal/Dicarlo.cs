@@ -106,6 +106,11 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
         }
 
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void chkCocina_CheckedChanged(object sender, EventArgs e)
         {
             if (chkCocina.Checked)
