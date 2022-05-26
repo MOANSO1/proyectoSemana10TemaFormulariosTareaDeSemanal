@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Axel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axel.Designer.cs">
+      <DependentUpon>Axel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Camila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Axel.resx">
+      <DependentUpon>Axel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Camila.resx">
       <DependentUpon>Camila.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +109,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\p1c6p3ld8o3t78qb5r2av2upm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\ImgClienteForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\58483.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
