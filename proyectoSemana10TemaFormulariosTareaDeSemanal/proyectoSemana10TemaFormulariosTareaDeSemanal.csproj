@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Axel.cs" />
+    <Compile Include="Axel.Designer.cs">
+      <DependentUpon>Axel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camila.cs" />
+    <Compile Include="Camila.Designer.cs">
+      <DependentUpon>Camila.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +66,33 @@
     <Compile Include="Dicarlo.Designer.cs">
       <DependentUpon>Dicarlo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Melissa.cs" />
+    <Compile Include="Melissa.Designer.cs">
+      <DependentUpon>Melissa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moises.cs" />
+    <Compile Include="Moises.Designer.cs">
+      <DependentUpon>Moises.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Axel.resx">
+      <DependentUpon>Axel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camila.resx">
+      <DependentUpon>Camila.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dicarlo.resx">
       <DependentUpon>Dicarlo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Melissa.resx">
+      <DependentUpon>Melissa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moises.resx">
+      <DependentUpon>Moises.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +116,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\p1c6p3ld8o3t78qb5r2av2upm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\ImgClienteForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\58483.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
