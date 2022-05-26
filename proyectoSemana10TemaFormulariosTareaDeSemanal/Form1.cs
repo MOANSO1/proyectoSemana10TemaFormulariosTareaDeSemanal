@@ -30,5 +30,12 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
             formCamila.ShowDialog();
         }
+
+        private void btnFormSaul_Click(object sender, EventArgs e)
+        {
+            Saúl formSaúl = new Saúl();
+
+            formSaúl.ShowDialog();
+        }
     }
 }
