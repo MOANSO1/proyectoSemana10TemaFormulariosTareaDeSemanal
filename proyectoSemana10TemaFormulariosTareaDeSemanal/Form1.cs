@@ -50,5 +50,11 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
             Melissa formMelissa = new Melissa();
             formMelissa.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Joycee formJoyce = new Joycee();
+            formJoyce.ShowDialog();
+        }
     }
 }
