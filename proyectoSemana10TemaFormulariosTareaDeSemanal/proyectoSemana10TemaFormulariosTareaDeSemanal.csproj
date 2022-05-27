@@ -70,6 +70,12 @@
     <Compile Include="Dicarlo.Designer.cs">
       <DependentUpon>Dicarlo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Joycee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joycee.Designer.cs">
+      <DependentUpon>Joycee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Melissa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joycee.resx">
+      <DependentUpon>Joycee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Melissa.resx">
       <DependentUpon>Melissa.cs</DependentUpon>
