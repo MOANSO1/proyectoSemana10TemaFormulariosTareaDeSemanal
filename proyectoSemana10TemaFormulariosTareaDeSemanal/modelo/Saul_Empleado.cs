@@ -29,7 +29,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.modelo
         public string DNIempleado1 { get => DNIempleado; set => DNIempleado = value; }
         public string DireccionEmpleado1 { get => DireccionEmpleado; set => DireccionEmpleado = value; }
         public int HijosEmpleados1 { get => HijosEmpleados; set => HijosEmpleados = value; }
-        public char ExperienciaLaboralEmpleado1 { get => ExperienciaLaboralEmpleado; set => ExperienciaLaboralEmpleado = value; }
+        public string ExperienciaLaboralEmpleado1 { get => ExperienciaLaboralEmpleado; set => ExperienciaLaboralEmpleado = value; }
         public float SueldoFijoEmpleado1 { get => SueldoFijoEmpleado; set => SueldoFijoEmpleado = value; }
     }
 }
