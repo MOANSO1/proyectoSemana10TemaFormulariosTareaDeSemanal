@@ -49,6 +49,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.dglista = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dglista)).BeginInit();
             this.SuspendLayout();
             // 
             // chkMesa
@@ -241,11 +243,22 @@
             this.label5.Text = "DNI Empleado";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // dglista
+            // 
+            this.dglista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dglista.Location = new System.Drawing.Point(535, 63);
+            this.dglista.Name = "dglista";
+            this.dglista.RowHeadersWidth = 51;
+            this.dglista.RowTemplate.Height = 24;
+            this.dglista.Size = new System.Drawing.Size(382, 242);
+            this.dglista.TabIndex = 34;
+            // 
             // Dicarlo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(985, 450);
+            this.Controls.Add(this.dglista);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -268,6 +281,8 @@
             this.Controls.Add(this.label4);
             this.Name = "Dicarlo";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Dicarlo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dglista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +310,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dglista;
     }
 }

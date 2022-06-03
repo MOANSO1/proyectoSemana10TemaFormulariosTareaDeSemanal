@@ -1,10 +1,12 @@
 ﻿using proyectoSemana10TemaFormulariosTareaDeSemanal.datos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 
 
@@ -29,6 +31,27 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
             }catch(Exception em)
             {
                 return false;
+            }
+        }
+        public static DataTable listar()
+        {
+            try
+            {
+                Conexion con = new Conexion();
+                string sql = "SELECT * from ComprarProductos;";
+                SqlCommand comando = new SqlCommand(sql, con.conectar());
+                SqlDataReader dr = comando.ExecuteReader(CommandBehavior.CloseConnection);
+                DataTable dt = new DataTable();
+                dt.Load(dr);
+                con.desconectar();
+                return dt;
+
+
+
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
     }

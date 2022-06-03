@@ -102,11 +102,12 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
                 VentaProducto em = new VentaProducto();
                 em.IDcompra1 = txtidcompra.Text;
                 em.DNIempleado1 = DniEmpleado.Text;
-                em.DNIcliente1 = DniEmpleado.Text;
+                em.DNIcliente1 = dniCliente.Text;
                 em.CostoTotal1 = txttotal.Text;
                 MessageBox.Show("Compra Realizada exitosamente");
                 if (DicarloCAD.guardarVenta(em))
                 {
+                    llenarGrid();
                     MessageBox.Show("guardado en la base");
                 }
                 else
@@ -138,6 +139,11 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dicarlo_Load(object sender, EventArgs e)
         {
 
         }
@@ -204,6 +210,19 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         private void txtcocina_TextChanged(object sender, EventArgs e)
         {
          
+        }
+        private void llenarGrid()
+        {
+            DataTable datos = DicarloCAD.listar();
+            if(datos == null)
+            {
+                MessageBox.Show("No se logro acceder");
+            }
+            else
+            {
+                dglista.DataSource = datos.DefaultView;
+            }
+
         }
     }
 }
