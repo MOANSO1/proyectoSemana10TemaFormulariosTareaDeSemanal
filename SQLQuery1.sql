@@ -34,12 +34,12 @@ create table Producto
 	NombreProducto varchar(20) NOT NULL,
 	PrecioProducto float NOT NULL
 )
-
+drop table if exists ComprarProductos
 create table ComprarProductos
 (
 	IDcompra char(5) PRIMARY KEY,
-	DNIcliente char(8) FOREIGN KEY(DNIcliente) references Cliente(DNIcliente),
-	DNIempleado char(8) FOREIGN KEY(DNIempleado) references Empleado(DNIempleado),
+	DNIcliente char(8) NOT NULL,
+	DNIempleado char(8)NOT NULL,
 	CostoTotal float NOT NULL
 )
 
