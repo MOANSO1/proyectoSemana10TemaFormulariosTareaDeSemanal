@@ -26,11 +26,11 @@ create table Proveedor
 	TelefonoProveedor char(9) NOT NULL,
 	CorreoCliente varchar(40) NOT NULL
 )
-
+drop table if exists Producto
 create table Producto
 (
 	IDproducto char(5) PRIMARY KEY,
-	IDproveedor char(5) FOREIGN KEY(IDproveedor) references Proveedor(IDproveedor),
+	IDproveedor char(5) NOT NULL,
 	NombreProducto varchar(20) NOT NULL,
 	PrecioProducto float NOT NULL
 )
@@ -59,3 +59,4 @@ create table GananciaProducto
 )
 
 Select *From Empleado
+Select *From Producto
