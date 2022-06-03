@@ -8,5 +8,6 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.modelo
 {
     class Camila
     {
+
     }
 }

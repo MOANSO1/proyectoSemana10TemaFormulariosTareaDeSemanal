@@ -8,7 +8,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.datos
 {
     class CamilaCAD
     {
-        public static bool guardar(Camila c)
+        public static bool guardar(CamilaCAD c)
         {
 
         }
