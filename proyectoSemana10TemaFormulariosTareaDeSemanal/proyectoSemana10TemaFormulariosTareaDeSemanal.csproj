@@ -59,6 +59,7 @@
       <DependentUpon>Camila.cs</DependentUpon>
     </Compile>
     <Compile Include="datos\Conexion.cs" />
+    <Compile Include="datos\DicarloCAD.cs" />
     <Compile Include="datos\Saul_EmpleadoCAD.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -85,6 +86,7 @@
       <DependentUpon>Melissa.cs</DependentUpon>
     </Compile>
     <Compile Include="modelo\Saul_Empleado.cs" />
+    <Compile Include="modelo\VentaProducto.cs" />
     <Compile Include="Moises.cs">
       <SubType>Form</SubType>
     </Compile>

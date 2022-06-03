@@ -30,7 +30,6 @@ C:\Users\camil\Desktop\2022-1\MODELACIÓN Y ANÁLISIS DE SOFTWARE\PRÁCTICA EN V
 C:\Users\camil\Desktop\2022-1\MODELACIÓN Y ANÁLISIS DE SOFTWARE\PRÁCTICA EN VS\Tarea26Mayo\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.csproj.CoreCompileInputs.cache
 C:\Users\camil\Desktop\2022-1\MODELACIÓN Y ANÁLISIS DE SOFTWARE\PRÁCTICA EN VS\Tarea26Mayo\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.exe
 C:\Users\camil\Desktop\2022-1\MODELACIÓN Y ANÁLISIS DE SOFTWARE\PRÁCTICA EN VS\Tarea26Mayo\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.pdb
-C:\Users\camil\Desktop\2022-1\MODELACIÓN Y ANÁLISIS DE SOFTWARE\PRÁCTICA EN VS\Tarea26Mayo\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\MultipleForms.Joyce.resources
 C:\Users\camil\Desktop\2022-1\MODELACIÓN Y ANÁLISIS DE SOFTWARE\PRÁCTICA EN VS\Tarea26Mayo\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.Joycee.resources
 C:\Users\camil\Desktop\FormSQL\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.csproj.AssemblyReference.cache
 C:\Users\camil\Desktop\FormSQL\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.csproj.SuggestedBindingRedirects.cache
@@ -50,3 +49,4 @@ C:\Users\camil\Desktop\FormSQL\proyectoSemana10TemaFormulariosTareaDeSemanal\obj
 C:\Users\camil\Desktop\FormSQL\proyectoSemana10TemaFormulariosTareaDeSemanal\bin\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.exe.config
 C:\Users\camil\Desktop\FormSQL\proyectoSemana10TemaFormulariosTareaDeSemanal\bin\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.exe
 C:\Users\camil\Desktop\FormSQL\proyectoSemana10TemaFormulariosTareaDeSemanal\bin\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.pdb
+C:\Users\camil\Desktop\2022-1\MODELACIÓN Y ANÁLISIS DE SOFTWARE\PRÁCTICA EN VS\Tarea26Mayo\proyectoSemana10TemaFormulariosTareaDeSemanal\obj\Debug\proyectoSemana10TemaFormulariosTareaDeSemanal.Saul.resources
