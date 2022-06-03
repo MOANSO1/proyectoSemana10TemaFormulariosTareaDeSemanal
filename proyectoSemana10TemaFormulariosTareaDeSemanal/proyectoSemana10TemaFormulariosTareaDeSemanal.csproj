@@ -62,6 +62,8 @@
     <Compile Include="datos\Camila_CalcularSalarioCAD.cs" />
     <Compile Include="datos\Conexion.cs" />
     <Compile Include="datos\DicarloCAD.cs" />
+    <Compile Include="datos\Joyce_CalcularGananciaCAD.cs" />
+    <Compile Include="modelo\Joyce_CalcularGanancia.cs" />
     <Compile Include="datos\Saul_EmpleadoCAD.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

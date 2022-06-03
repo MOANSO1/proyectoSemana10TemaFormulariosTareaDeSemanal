@@ -53,9 +53,11 @@ create table SalarioTrabajador
 	SalarioTotal float NOT NULL
 )
 Select *From SalarioTrabajador
+drop table if exists GananciaProducto
 create table GananciaProducto
 (
 	IDganancia char(5) PRIMARY KEY,
+	NombreProducto varchar(10) NOT NULL,
 	GananciaProducto float NOT NULL,
 	CostoProducto float NOT NULL
 )

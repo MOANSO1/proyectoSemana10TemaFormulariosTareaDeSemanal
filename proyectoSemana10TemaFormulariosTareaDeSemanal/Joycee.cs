@@ -1,4 +1,5 @@
-﻿using System;
+﻿using proyectoSemana10TemaFormulariosTareaDeSemanal.datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,13 +16,14 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         public Joycee()
         {
             InitializeComponent();
+            llenarTabla();
         }
 
         private void imageRegister_Click(object sender, EventArgs e)
         {
-            int tempNum1 = 0;
-            int tempNum2 = 0;
-            int resultGanancia = 0;
+            double costoVenta = 0;
+            double costoCompra = 0;
+            double resultGanancia = 0;
             string resultCadena;
 
             if (string.IsNullOrEmpty(txtIdProduct.Text) || string.IsNullOrEmpty(txtNameProduct.Text) ||
@@ -31,7 +33,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
                 return;
             }
 
-            if (!int.TryParse(txtCostoVenta.Text, out tempNum1) || !int.TryParse(txtCostoCompra.Text, out tempNum2))
+           else if (!double.TryParse(txtCostoVenta.Text, out costoVenta) || !double.TryParse(txtCostoCompra.Text, out costoCompra))
             {
                 txtCostoVenta.Text = "";
                 txtCostoCompra.Text = "";
@@ -40,10 +42,8 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
                 return;
             }
 
-            int venta = int.Parse(txtCostoVenta.Text);
-            int compra = int.Parse(txtCostoCompra.Text);
-
-            resultGanancia = (venta - compra);
+           
+            resultGanancia = (costoVenta - costoCompra);
 
 
 
@@ -52,6 +52,30 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
                             "\nGanancia: " + resultGanancia;
 
             MessageBox.Show(resultCadena);
+
+            try
+            {
+                Joyce_CalcularGanancia j = new Joyce_CalcularGanancia();
+                j.IDganancia1 = txtIdProduct.Text;
+                j.NombreProducto1 = txtNameProduct.Text;
+                j.CostoCompraProducto1 = (float)costoCompra;
+                j.CostoVentaProducto1 = (float)costoVenta;
+                j.GananciaProducto1 = (float)resultGanancia;
+
+                if (Joyce_CalcularGananciaCAD.guardar(j))
+                {
+                    llenarTabla();
+                    MessageBox.Show("Calculo de Ganancia correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Ya existe otro Calculo de Ganancia");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void imagenCancelRegister_Click(object sender, EventArgs e)
@@ -60,6 +84,19 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
             txtCostoVenta.ResetText();
             txtIdProduct.ResetText();
             txtNameProduct.ResetText();
+        }
+        private void llenarTabla()
+        {
+            DataTable datos = Joyce_CalcularGananciaCAD.listar();
+            if (datos == null)
+            {
+                MessageBox.Show("No se logro acceder a los datos");
+            }
+            else
+            {
+                listaGanancia.DataSource = datos.DefaultView;
+
+            }
         }
     }
 }
