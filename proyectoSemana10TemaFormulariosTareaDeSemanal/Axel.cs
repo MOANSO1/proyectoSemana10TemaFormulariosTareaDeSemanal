@@ -1,4 +1,6 @@
-﻿using System;
+﻿using proyectoSemana10TemaFormulariosTareaDeSemanal.datos;
+using proyectoSemana10TemaFormulariosTareaDeSemanal.modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         public Axel()
         {
             InitializeComponent();
+            llenarTabla();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -39,30 +42,79 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
         private void btnRegistrarCliente_Click(object sender, EventArgs e)
         {
+            string nombre = txtNombre.Text;
+            string apellido = txtApellidos.Text;
+            string dni = txtDni.Text;
+            string telefono = txtTelefono.Text;
+            string direccion = txtDireccion.Text;
+            string correo = txtCorreo.Text;
+
             if (string.IsNullOrEmpty(txtNombre.Text) && string.IsNullOrEmpty(txtApellidos.Text) && string.IsNullOrEmpty(txtDireccion.Text))
             {
                 MessageBox.Show("Ingrese los datos a las casillas vacias  correspondientes  ");
 
                 return;
             }
-            int num = 0;
-            int num1 = 0;
 
-            if (!int.TryParse(txtDni.Text, out num) || !int.TryParse(txtTelefono.Text, out num1))
+            else
             {
-                txtDni.Text = "";
-                txtTelefono.Text = "";
+                try
+                {
+                    Axel_Cliente a = new Axel_Cliente();
+                    a.NombreCliente1 = nombre;
+                    a.ApellidosCliente1 = apellido;
+                    a.DNIcliente1 = dni;
+                    a.TelefonoCliente1 = telefono;
+                    a.DireccionCliente1 = direccion;
+                    a.CorreoCliente1 = correo;
 
-                MessageBox.Show("Ingrese Valores numericos a las casillas correspondientes ");
-                return; //Salimos
+                    if (Axel_ClienteCAD.guardar(a))
+                    {
+                        llenarTabla();
+                        MessageBox.Show("Cliente Registrado correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ya existe otro cliente");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            string cadena = txtNombre.Text + " " + txtApellidos.Text + " " + " Cliente Registrado";
-            MessageBox.Show(cadena);
+            
+            txtApellidos.Text = "";
+            txtNombre.Text = "";
+            txtDni.Text = "";
+            txtTelefono.Text = "";
+            txtDireccion.Text = "";
+            txtCorreo.Text = "";
+        }
+
+        private void llenarTabla()
+        {
+            DataTable datos = Axel_ClienteCAD.listar();
+            if (datos == null)
+            {
+                MessageBox.Show("No se logro acceder a los datos");
+            }
+            else
+            {
+                listaCliente.DataSource = datos.DefaultView;
+
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void listaCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            llenarTabla();
+
         }
     }
 }

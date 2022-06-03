@@ -1,4 +1,6 @@
-﻿using System;
+﻿using proyectoSemana10TemaFormulariosTareaDeSemanal.datos;
+using proyectoSemana10TemaFormulariosTareaDeSemanal.modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         public Camila()
         {
             InitializeComponent();
+            llenarTabla();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -29,6 +32,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string idCalculoSueldo = txtIdCalculoSueldo.Text;
             string nombreTrabajador = txtNombreTrabajador.Text;
             if (nombreTrabajador.Equals(""))
             {
@@ -79,23 +83,38 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
                 comisionPorVenta = 15;
             }
 
-            int cantidadVentasRealizadas = 0;
-
-            if (!int.TryParse(txtCantidadDeVentasRealizadas.Text, out cantidadVentasRealizadas))
-            {
-                MessageBox.Show("Ingrese un valor numerico");
-                return; //Salimos
-            }
-            else
-            {
-                cantidadVentasRealizadas=int.Parse(txtCantidadDeVentasRealizadas.Text);
-            }
+            int cantidadVentasRealizadas = int.Parse(txtCantidadDeVentasRealizadas.Text);
 
             double salarioTotal = 0;
             salarioTotal = salarioFijo + comisionPorVenta * cantidadVentasRealizadas;
+            txtSalarioTotal.Text= salarioTotal.ToString();
 
-            MessageBox.Show("Hola " + nombreTrabajador + "! Tu salario total del mes es: S/." + salarioTotal);
-            
+            //MessageBox.Show("Hola " + nombreTrabajador + "! Tu salario total del mes es: S/." + salarioTotal);
+
+            try
+            {
+                Camila_CalcularSalario c = new Camila_CalcularSalario();
+                c.IDsalario1=idCalculoSueldo;
+                c.NombreTrabajador1 = nombreTrabajador;
+                c.SalarioFijo1 = (float)salarioFijo;
+                c.CantidadVentas1 = cantidadVentasRealizadas;
+                c.ComisionPorVenta1 = (float)comisionPorVenta;
+                c.SalarioTotal1 = (float)salarioTotal;
+
+                if (Camila_CalcularSalarioCAD.guardar(c))
+                {
+                    llenarTabla();
+                    MessageBox.Show("Calculo de Salario Registrado correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Ya existe otro Calculo de Salario");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void cboSalarioFijo_SelectedIndexChanged(object sender, EventArgs e)
@@ -109,6 +128,20 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
             cboSalarioFijo.ResetText();
             cboComisionPorVenta.ResetText();
             txtCantidadDeVentasRealizadas.ResetText();
+        }
+
+        private void llenarTabla()
+        {
+            DataTable datos = Camila_CalcularSalarioCAD.listar();
+            if (datos == null)
+            {
+                MessageBox.Show("No se logro acceder a los datos");
+            }
+            else
+            {
+                listaSalarioTrabajador.DataSource = datos.DefaultView;
+
+            }
         }
     }
 }

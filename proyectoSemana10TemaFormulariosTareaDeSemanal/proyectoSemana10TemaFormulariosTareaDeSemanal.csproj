@@ -58,6 +58,21 @@
     <Compile Include="Camila.Designer.cs">
       <DependentUpon>Camila.cs</DependentUpon>
     </Compile>
+    <Compile Include="datos\Axel_ClienteCAD.cs" />
+    <Compile Include="datos\Camila_CalcularSalarioCAD.cs" />
+    <Compile Include="datos\Conexion.cs" />
+    <Compile Include="datos\DicarloCAD.cs" />
+    <Compile Include="datos\Joyce_CalcularGananciaCAD.cs" />
+    <Compile Include="datos\ProductosMCAD.cs" />
+    <Compile Include="datos\ProveedorMCAD.cs" />
+    <Compile Include="Melissaa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Melissaa.Designer.cs">
+      <DependentUpon>Melissaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modelo\Joyce_CalcularGanancia.cs" />
+    <Compile Include="datos\Saul_EmpleadoCAD.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,12 +85,18 @@
     <Compile Include="Dicarlo.Designer.cs">
       <DependentUpon>Dicarlo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Melissa.cs">
+    <Compile Include="Joycee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Melissa.Designer.cs">
-      <DependentUpon>Melissa.cs</DependentUpon>
+    <Compile Include="Joycee.Designer.cs">
+      <DependentUpon>Joycee.cs</DependentUpon>
     </Compile>
+    <Compile Include="modelo\Axel_Cliente.cs" />
+    <Compile Include="modelo\Camila_CalcularSalario.cs" />
+    <Compile Include="modelo\Productos.cs" />
+    <Compile Include="modelo\Proveedor.cs" />
+    <Compile Include="modelo\Saul_Empleado.cs" />
+    <Compile Include="modelo\VentaProducto.cs" />
     <Compile Include="Moises.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +105,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Saul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saul.Designer.cs">
+      <DependentUpon>Saul.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Axel.resx">
       <DependentUpon>Axel.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,8 +123,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Melissa.resx">
-      <DependentUpon>Melissa.cs</DependentUpon>
+    <EmbeddedResource Include="Joycee.resx">
+      <DependentUpon>Joycee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Melissaa.resx">
+      <DependentUpon>Melissaa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Moises.resx">
       <DependentUpon>Moises.cs</DependentUpon>
@@ -112,6 +142,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Saul.resx">
+      <DependentUpon>Saul.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
