@@ -205,7 +205,10 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         public Dicarlo()
         {
             InitializeComponent();
+            llenarGrid();
         }
+
+
 
         private void txtcocina_TextChanged(object sender, EventArgs e)
         {

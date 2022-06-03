@@ -59,7 +59,6 @@
       <DependentUpon>Camila.cs</DependentUpon>
     </Compile>
     <Compile Include="DicarloCAD.cs" />
-    <Compile Include="datos\CamilaCAD.cs" />
     <Compile Include="datos\Conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
