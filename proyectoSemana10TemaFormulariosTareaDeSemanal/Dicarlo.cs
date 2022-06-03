@@ -97,8 +97,29 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                VentaProducto em = new VentaProducto();
+                em.IDcompra1 = txtidcompra.Text;
+                em.DNIempleado1 = DniEmpleado.Text;
+                em.DNIcliente1 = DniEmpleado.Text;
+                em.CostoTotal1 = txttotal.Text;
+                MessageBox.Show("Compra Realizada exitosamente");
+                if (DicarloCAD.guardarVenta(em))
+                {
+                    MessageBox.Show("guardado en la base");
+                }
+                else
+                {
+                    MessageBox.Show("no guardado en la base");
+                }
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
            
-            MessageBox.Show("Compra Realizada exitosamente");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -107,6 +128,16 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

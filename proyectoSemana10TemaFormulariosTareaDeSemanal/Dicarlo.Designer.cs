@@ -43,6 +43,12 @@
             this.txtRepisa = new System.Windows.Forms.TextBox();
             this.btnComprar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.DniEmpleado = new System.Windows.Forms.TextBox();
+            this.dniCliente = new System.Windows.Forms.TextBox();
+            this.txtidcompra = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // chkMesa
@@ -182,11 +188,70 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // DniEmpleado
+            // 
+            this.DniEmpleado.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.DniEmpleado.Location = new System.Drawing.Point(380, 12);
+            this.DniEmpleado.Name = "DniEmpleado";
+            this.DniEmpleado.Size = new System.Drawing.Size(100, 22);
+            this.DniEmpleado.TabIndex = 28;
+            // 
+            // dniCliente
+            // 
+            this.dniCliente.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.dniCliente.Location = new System.Drawing.Point(602, 12);
+            this.dniCliente.Name = "dniCliente";
+            this.dniCliente.Size = new System.Drawing.Size(100, 22);
+            this.dniCliente.TabIndex = 29;
+            // 
+            // txtidcompra
+            // 
+            this.txtidcompra.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.txtidcompra.Location = new System.Drawing.Point(130, 12);
+            this.txtidcompra.Name = "txtidcompra";
+            this.txtidcompra.Size = new System.Drawing.Size(100, 22);
+            this.txtidcompra.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(522, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 16);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "DNI Cliente";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 16);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "idCompraProducto";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(278, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 16);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "DNI Empleado";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // Dicarlo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtidcompra);
+            this.Controls.Add(this.dniCliente);
+            this.Controls.Add(this.DniEmpleado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.chkRepisa);
@@ -224,5 +289,11 @@
         private System.Windows.Forms.TextBox txtRepisa;
         private System.Windows.Forms.Button btnComprar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox DniEmpleado;
+        private System.Windows.Forms.TextBox dniCliente;
+        private System.Windows.Forms.TextBox txtidcompra;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }
