@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace proyectoSemana10TemaFormulariosTareaDeSemanal
@@ -47,8 +40,20 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Melissa formMelissa = new Melissa();
+            Melissaa formMelissa = new Melissaa();
             formMelissa.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Joycee formJoyce = new Joycee();
+            formJoyce.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Saul saul = new Saul();
+            saul.ShowDialog();
         }
     }
 }
