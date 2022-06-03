@@ -39,8 +39,10 @@
             this.label_nameProduct = new System.Windows.Forms.Label();
             this.txtIdProduct = new System.Windows.Forms.TextBox();
             this.label_idProduct = new System.Windows.Forms.Label();
+            this.listaGanancia = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.imagenCancelRegister)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageRegister)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaGanancia)).BeginInit();
             this.SuspendLayout();
             // 
             // imagenCancelRegister
@@ -157,11 +159,22 @@
             this.label_idProduct.TabIndex = 11;
             this.label_idProduct.Text = "Escriba una ID:";
             // 
+            // listaGanancia
+            // 
+            this.listaGanancia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaGanancia.Location = new System.Drawing.Point(782, 77);
+            this.listaGanancia.Name = "listaGanancia";
+            this.listaGanancia.RowHeadersWidth = 51;
+            this.listaGanancia.RowTemplate.Height = 24;
+            this.listaGanancia.Size = new System.Drawing.Size(452, 266);
+            this.listaGanancia.TabIndex = 21;
+            // 
             // Joycee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1310, 450);
+            this.Controls.Add(this.listaGanancia);
             this.Controls.Add(this.imagenCancelRegister);
             this.Controls.Add(this.imageRegister);
             this.Controls.Add(this.txtCostoVenta);
@@ -176,6 +189,7 @@
             this.Text = "Joycee";
             ((System.ComponentModel.ISupportInitialize)(this.imagenCancelRegister)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageRegister)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaGanancia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +207,6 @@
         private System.Windows.Forms.Label label_nameProduct;
         private System.Windows.Forms.TextBox txtIdProduct;
         private System.Windows.Forms.Label label_idProduct;
+        private System.Windows.Forms.DataGridView listaGanancia;
     }
 }

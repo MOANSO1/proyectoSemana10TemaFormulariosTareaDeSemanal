@@ -47,7 +47,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Melissaa formMelissa = new Melissaa();
+            Melissa formMelissa = new Melissa();
             formMelissa.ShowDialog();
         }
 
