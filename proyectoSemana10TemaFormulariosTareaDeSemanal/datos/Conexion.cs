@@ -13,7 +13,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.datos
        
         public Conexion()
         {
-            con = new SqlConnection("Server=CAMILA;Database=FormSQL;integrated security=true");
+            con = new SqlConnection("Server=MSI\\SQLEXPRESS;Database=FormSQL;integrated security=true");
         }
 
         public SqlConnection conectar()
@@ -22,7 +22,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.datos
             {
                 con.Open();
                 return con;
-            }catch (Exception e)
+            }catch (Exception em)
             {
                 return null;
             }
@@ -35,7 +35,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.datos
                 con.Close();
                 return true;
             }
-            catch (Exception e)
+            catch (Exception em)
             {
                 return false;
             }
