@@ -58,6 +58,7 @@
     <Compile Include="Camila.Designer.cs">
       <DependentUpon>Camila.cs</DependentUpon>
     </Compile>
+    <Compile Include="datos\Conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
