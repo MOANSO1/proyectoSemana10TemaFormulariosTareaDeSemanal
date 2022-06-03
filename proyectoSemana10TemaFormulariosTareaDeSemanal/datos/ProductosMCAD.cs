@@ -51,9 +51,6 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.datos
             {
                 return null;
             }
-
-
-
         }
     }
 }
