@@ -83,7 +83,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
                 comisionPorVenta = 15;
             }
 
-            int cantidadVentasRealizadas = 0;
+            int cantidadVentasRealizadas = int.Parse(txtCantidadDeVentasRealizadas.Text);
 
             double salarioTotal = 0;
             salarioTotal = salarioFijo + comisionPorVenta * cantidadVentasRealizadas;
@@ -97,6 +97,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
                 c.IDsalario1=idCalculoSueldo;
                 c.NombreTrabajador1 = nombreTrabajador;
                 c.SalarioFijo1 = (float)salarioFijo;
+                c.CantidadVentas1 = cantidadVentasRealizadas;
                 c.ComisionPorVenta1 = (float)comisionPorVenta;
                 c.SalarioTotal1 = (float)salarioTotal;
 
