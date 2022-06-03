@@ -43,8 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.listaEmpleado = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.listaEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -204,15 +204,16 @@
             this.label1.TabIndex = 34;
             this.label1.Text = "NOMBRE";
             // 
-            // dataGridView1
+            // listaEmpleado
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(165, 482);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(733, 307);
-            this.dataGridView1.TabIndex = 51;
+            this.listaEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaEmpleado.Location = new System.Drawing.Point(62, 489);
+            this.listaEmpleado.Name = "listaEmpleado";
+            this.listaEmpleado.RowHeadersWidth = 51;
+            this.listaEmpleado.RowTemplate.Height = 24;
+            this.listaEmpleado.Size = new System.Drawing.Size(775, 296);
+            this.listaEmpleado.TabIndex = 51;
+            this.listaEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaEmpleado_CellContentClick);
             // 
             // Saul
             // 
@@ -220,7 +221,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1068, 865);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.listaEmpleado);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRestaurar);
             this.Controls.Add(this.btnRegistrar);
@@ -238,7 +239,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Saul";
             this.Text = "Saul";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,6 +262,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView listaEmpleado;
     }
 }

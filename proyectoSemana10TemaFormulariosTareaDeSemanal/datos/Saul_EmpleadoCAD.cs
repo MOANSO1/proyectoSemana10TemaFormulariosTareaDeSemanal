@@ -1,6 +1,7 @@
 ﻿using proyectoSemana10TemaFormulariosTareaDeSemanal.modelo;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,26 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.datos
             }catch(Exception e)
             {
                 return false;
+            }
+        }
+
+        public static DataTable listar()
+        {
+            try
+            {
+                Conexion con = new Conexion();
+                string sql = "SELECT * FROM Empleado ;";
+                SqlCommand comando = new SqlCommand(sql, con.conectar());
+                SqlDataReader dr = comando.ExecuteReader(CommandBehavior.CloseConnection);
+                DataTable dt = new DataTable();
+                dt.Load(dr);
+                con.desconectar();
+                return dt;
+
+            }
+            catch (Exception e)
+            {
+                return null;
             }
         }
     }

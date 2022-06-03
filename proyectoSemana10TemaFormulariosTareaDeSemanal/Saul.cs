@@ -17,6 +17,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         public Saul()
         {
             InitializeComponent();
+            llenarTabla();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
                     if (Saul_EmpleadoCAD.guardar(s))
                     {
+                        llenarTabla();
                         MessageBox.Show("Empleado Registrado correctamente");
                     }
                     else
@@ -85,6 +87,30 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void llenarTabla()
+        {
+            DataTable datos = Saul_EmpleadoCAD.listar();
+            if (datos == null)
+            {
+                MessageBox.Show("No se logro acceder a los datos");
+            }
+            else
+            {
+                listaEmpleado.DataSource = datos.DefaultView;
+
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            llenarTabla();
+        }
+
+        private void listaEmpleado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            llenarTabla();
         }
     }
 }
