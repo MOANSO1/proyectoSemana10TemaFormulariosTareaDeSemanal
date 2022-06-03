@@ -52,12 +52,11 @@ create table SalarioTrabajador
 	CantidadVentas int NOT NULL,
 	SalarioTotal float NOT NULL
 )
-
+Select *From SalarioTrabajador
 create table GananciaProducto
 (
 	IDganancia char(5) PRIMARY KEY,
 	GananciaProducto float NOT NULL,
 	CostoProducto float NOT NULL
 )
-
 Select *From Empleado
