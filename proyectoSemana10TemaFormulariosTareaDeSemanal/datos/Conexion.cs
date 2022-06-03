@@ -13,7 +13,7 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal.datos
        
         public Conexion()
         {
-            con = new SqlConnection("Server=CAMILA;Database=FormSQL;integrated security=true");
+            con = new SqlConnection("Server=DESKTOP-VP4G5K0;Database=FormSQL;integrated security=true");
         }
 
         public SqlConnection conectar()
