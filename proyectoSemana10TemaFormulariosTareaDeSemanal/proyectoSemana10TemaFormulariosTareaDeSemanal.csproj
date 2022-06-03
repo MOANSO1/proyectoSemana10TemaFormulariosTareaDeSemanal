@@ -58,9 +58,12 @@
     <Compile Include="Camila.Designer.cs">
       <DependentUpon>Camila.cs</DependentUpon>
     </Compile>
+    <Compile Include="datos\Axel_ClienteCAD.cs" />
+    <Compile Include="datos\Camila_CalcularSalarioCAD.cs" />
     <Compile Include="datos\Conexion.cs" />
     <Compile Include="datos\DicarloCAD.cs" />
-    <Compile Include="datos\ProductosMCAD.cs" />
+    <Compile Include="datos\Joyce_CalcularGananciaCAD.cs" />
+    <Compile Include="modelo\Joyce_CalcularGanancia.cs" />
     <Compile Include="datos\Saul_EmpleadoCAD.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -80,13 +83,14 @@
     <Compile Include="Joycee.Designer.cs">
       <DependentUpon>Joycee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Melissaa.cs">
+    <Compile Include="Melissa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Melissaa.Designer.cs">
-      <DependentUpon>Melissaa.cs</DependentUpon>
+    <Compile Include="Melissa.Designer.cs">
+      <DependentUpon>Melissa.cs</DependentUpon>
     </Compile>
-    <Compile Include="modelo\Productos.cs" />
+    <Compile Include="modelo\Axel_Cliente.cs" />
+    <Compile Include="modelo\Camila_CalcularSalario.cs" />
     <Compile Include="modelo\Saul_Empleado.cs" />
     <Compile Include="modelo\VentaProducto.cs" />
     <Compile Include="Moises.cs">
@@ -118,8 +122,8 @@
     <EmbeddedResource Include="Joycee.resx">
       <DependentUpon>Joycee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Melissaa.resx">
-      <DependentUpon>Melissaa.cs</DependentUpon>
+    <EmbeddedResource Include="Melissa.resx">
+      <DependentUpon>Melissa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Moises.resx">
       <DependentUpon>Moises.cs</DependentUpon>
