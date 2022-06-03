@@ -90,5 +90,11 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
         {
             llenarTabla();
         }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs KeyPressEvent)
+        {
+            KeyPressEvent.Handled = !char.IsDigit(KeyPressEvent.KeyChar);
+        }
+
     }
 }
