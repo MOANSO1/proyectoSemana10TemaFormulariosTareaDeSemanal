@@ -44,5 +44,23 @@ namespace proyectoSemana10TemaFormulariosTareaDeSemanal
 
             ForMoises.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Melissa formMelissa = new Melissa();
+            formMelissa.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Joycee formJoyce = new Joycee();
+            formJoyce.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Saul saul = new Saul();
+            saul.ShowDialog();
+        }
     }
 }
